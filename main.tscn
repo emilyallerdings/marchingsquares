@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4gtdckk8oojf"]
+
+[ext_resource type="Script" path="res://MarchingSquares.cs" id="1_eheg2"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5uqkv"]
+frequency = 0.0345
+fractal_type = 0
+
+[node name="MarchingSquares" type="Node2D"]
+script = ExtResource("1_eheg2")
+Noise3D = SubResource("FastNoiseLite_5uqkv")
